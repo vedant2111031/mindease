@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Ease</title>
+    <link rel="stylesheet" href="temp.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+</head>
+<body style="font-family: 'roboto slab';">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="1Home.html"> MIND <br><span style="color: black; margin: 20px;">EASE</span></a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="EducateYourself.html">Educate yourself</a></li>
+                    <li><a href="Helpself.html">Help yourself</a></li>
+                    <li><a href="Helpothers.html">Help others</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="urgent.html" class="urgent">Urgent Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="homeflex">
+        <div class="main-content" style="text-align: left;">
+            <h1>Transform your thoughts, transform your world.</h1>
+            <p>Welcome to MindEase, where compassionate therapy and personalized support guide you to a healthier, balanced life. Let us help you achieve the fulfilling and joyful life you deserve.</p>
+            <div class="buttons">
+                <button class="btn-open-popup" onclick="togglePopup()">
+                    Get Started
+                </button>
+              
+                <div id="popupOverlay" 
+                       class="overlay-container">
+                      <div class="popup-box">
+                          <h2 style="color: #6a6a3b;">Sign Up</h2>
+                          <form class="form-container" action="Getstarted.html">
+                              <label class="form-label" 
+                                     for="name">
+                                Username:
+                                </label>
+                              <input class="form-input" type="text" 
+                                     placeholder="Enter Your Username" 
+                                     id="name" name="name" required>
+              
+                              <label class="form-label" for="email">Email:</label>
+                              <input class="form-input"
+                                     type="email" 
+                                     placeholder="Enter Your Email"
+                                     id="email" 
+                                     name="email" required>
+              
+                              <button class="btn-submit" 
+                                      type="submit"
+                                      onclick="href">
+                                Submit
+                                </button>
+                          </form>
+              
+                        <button class="btn-close-popup" 
+                                  onclick="togglePopup()">
+                            Close
+                        </button>
+                    </div>
+                </div>
+                <a href="Learn.html" class="learn-more">Learn more</a>
+                <br><br><br>
+                <a href="Notalone.html" class="notalone">You Are Not Alone</a>
+            </div>
+        </div>
+        <div class="illustration">
+            <img src="Homepagewater.png" alt="Illustration">
+        </div>
+    </div>
+    <script>
+        function togglePopup() {
+            const overlay = document.getElementById('popupOverlay');
+            overlay.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
